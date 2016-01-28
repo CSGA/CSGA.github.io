@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf -8" />
+ <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<title>basic infomation</title>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+a{text-decoration:none;outline:none;}
+html,body{font:12px/23px \u5B8B\u4F53;background: #e4e8ec;}
+.clearfix:after{content: " ";display:block;clear: both;height: 0;line-height: 0;visibility: hidden;}
+.clearfix{display: inline-block;}
+.clearfix{display: block;}
+/* warp */
+.warp{width: 980px;margin: 0 auto;padding:35px 0 40px;}
+</style>
+
+<link href="css/page.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    var f_main_nav=$("#f_main_nav");
+    var f_main_con=$("#f_main_con");
+
+    f_main_nav.find("li").each(function(index){
+        $(this).click(function(){
+            if(f_main_con.find("li").eq(index).css("display")=="none"){
+                f_main_con.find("li").fadeOut("fast").eq(index).fadeIn("fast");
+                f_main_nav.find("span").fadeOut("fast").eq(index).fadeIn("fast");
+            }else{
+            	f_main_con.find("li").fadeOut("fast").eq(index).fadeOut("fast");
+                f_main_nav.find("span").fadeOut("fast").eq(index).fadeOut("fast");
+            }
+        });
+    });
+    f_main_con.find("a").click(function(){
+        $(this).parent().fadeOut("fast");
+        f_main_nav.find("span").fadeOut("fast");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="col-md-12 col-xs-12">
+									<div class='all'>
+									<div>&nbsp;</div>
+									<div>&nbsp;</div>
+									<div>&nbsp;</div>
+        <div class='box'>  
+		    <a href='index.htm'>                  <div class='card bg-01'><span class='card-content'>首&emsp;&emsp;页</span></div>            </a>
+        </div>
+          
+        <div class='box'>
+            <a href='basicInformation.htm'>          <div class='card bg-02'><span class='card-content'>基本资料</span></div>            </a>
+        </div>
+        <div class='box'>
+            <a href='hometown.htm'>                  <div class='card bg-03'><span class='card-content'>最美家乡</span></div>            </a>
+        </div>
+        <div class='box'>
+            <a href='myTravel.htm'>                  <div class='card bg-04'><span class='card-content'>旅行足迹</span></div>            </a>
+        </div>
+        <div class='box'>
+            <a href='myLife.htm'>                  <div class='card bg-05'><span class='card-content'>片刻生活</span></div>            </a>
+        </div>
+</div>
+<div class="warp">
+
+	<div id="f_main_nav" class="f_main_nav">
+		<ul class="clearfix">
+			<li class="fm1">
+				<p class="fm_info">资料卡</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm2">
+				<p class="fm_info">兴趣爱好</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm3">
+				<p class="fm_info">性格自述</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm4">
+				<p class="fm_info">写两句话</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm5">
+				<p class="fm_info">懵懂大一上</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm6">
+				<p class="fm_info">纠结大一下</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm7">
+				<p class="fm_info">奔波大二上</p>
+				<span>&nbsp;</span>
+			</li>
+			<li class="fm8">
+				<p class="fm_info">期待的未来</p>
+				<span>&nbsp;</span>
+			</li>
+		</ul>
+	</div>
+		
+	<div id="f_main_con" class="f_main_con">
+		<ul>
+			<li class="fmc1">
+				<a class="dc_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>姓名：陈思光<br />&emsp;昵称：Azure<br />&emsp;&emsp;性别：女<br />&emsp;&emsp;&emsp;生日：06.27<br />&emsp;&emsp;&emsp;&emsp;故乡：河北承德<br />&emsp;&emsp;&emsp;&emsp;&emsp;QQ：781298849</p>
+				</div>
+			</li>
+			<li class="fmc2">
+				<a class="dr_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>听歌<br />&emsp;散步<br />&emsp;&emsp;写字<br />&emsp;&emsp;&emsp;翻书<br />&emsp;&emsp;&emsp;&emsp;敲代码<br /></p>
+				</div>
+			</li>
+			<li class="fmc3">
+				<a class="de_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>从内向到外向，随机转换<br />&emsp;率直坦诚，通俗地说就是缺心眼<br />&emsp;&emsp; 可以感性得可怕也可以理性得可怕<br />&emsp;&emsp;&emsp;重情义，肯付出<br />&emsp;&emsp;&emsp;&emsp; 坚强独立<br />&emsp;&emsp;&emsp;&emsp;&emsp;综上所述：女汉子。鉴定完毕。</p>
+				</div>
+			</li>
+			<li class="fmc4">
+				<a class="df_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>做鸡汤，喝鸡汤，然而却并没有因此茁壮成长。<br />最后不过是成为了身体倍儿棒的打不死的小强，不知道这样算不算成长：）</p>
+				</div>
+			</li>
+			<li class="fmc5">
+				<a class="dx_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>高考后试图逃离北方，挣扎到了徐州，但还是没能过了南北分界线<br />&emsp;矿大很大也很美，嗯，从那时起开始喜欢在学校里散步<br />&emsp;&emsp;没有头脑发热报很多部门，但一个外联是那么棒的选择<br />&emsp;&emsp;&emsp;参加了一些活动，自信找回了很多</p>
+				</div>
+			</li>
+			<li class="fmc7">
+				<a class="app_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>这学期是春天和夏天，却不像上个学期那样积极活跃<br />&emsp; 时常会感到孤单，但每到这时候还是会记得去走一走<br />&emsp;&emsp;期末很纠结，要分班，要退出部门，有几次面试受挫<br />&emsp;&emsp;&emsp;有更多的时间在图书馆一个人自习，渐渐喜欢上这样的感觉<br />&emsp;&emsp;&emsp;&emsp;在学校里一整个学期，暑假才出去玩一下子都补了回来<br />&emsp;&emsp;&emsp;&emsp;&emsp;嗯,还有，我的二十岁生日,然后就充满了期待</p>
+				</div>
+			</li>
+			<li class="fmc6">
+				<a class="clear_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>2014级电子商务2班，二十岁最美好的遇见<br />&emsp;靠谱的哥们，懂事的姐妹，爱要满溢的大家庭<br />&emsp;&emsp;团支书or领导？嘎嘎~还是叫我操心管家吧~<br />&emsp;&emsp;&emsp; 一起走过了喜怒哀乐，我们才联结得愈发紧密<br />&emsp;&emsp;&emsp;&emsp;无论是熬夜，是奔跑，还是重复，情愿，又能怎样呢？这大概就是爱吧</p>
+				</div>
+			</li>
+			<li class="fmc8">
+				<a class="share_close" title="关闭" href="javascript:void(0);">关闭</a>
+				<div class="fmc_info">
+					<p>想想前路有我爱的你们相伴<br />&emsp;想想二十岁只是个美好的开始<br />&emsp;&emsp;于是就满怀期待~O(∩_∩)O</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+</body>
+</html>
